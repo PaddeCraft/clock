@@ -14,7 +14,6 @@ html, body, #binary, #decimal {
 
 body {
     background: linear-gradient(var(--rotation), var(--color1), var(--color2)) no-repeat;
-    /* background: linear-gradient(30deg, rgb(63, 255, 223), rgb(255, 0, 179)) no-repeat; */
 }
 
 #binary, #decimal {
@@ -39,8 +38,8 @@ body {
 
 #binary {
     font-family: "Martian Mono";
-    color: white;
-    opacity: 10%;
+    color: var(--font-color-bin);
+    opacity: var(--font-opacity-bin);
     font-size: 35vh;
 }
 
@@ -66,7 +65,7 @@ body {
 
 #dec-wrapper {
     font-family: "Courier Prime";
-    color: white;
+    color: var(--font-color-dec);
     text-align: center;
     display: table-cell;
     vertical-align: middle;

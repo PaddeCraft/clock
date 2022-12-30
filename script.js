@@ -142,6 +142,41 @@ const settings = new Knobs({
                 manipulate_url("crot", y.value);
             },
         },
+        "Font Settings: Decimal",
+        {
+            cssVar: ["font-color-dec"],
+            label: "Font Color",
+            type: "color",
+            value: params["decfc"] ? params["decfc"] : "#fff",
+            defaultValue: "#fff",
+            onChange: function (x, y, z) {
+                manipulate_url("decfc", y.value);
+            },
+        },
+        "Font Settings: Binary",
+        {
+            cssVar: ["font-color-bin"],
+            label: "Font Color",
+            type: "color",
+            value: params["binfc"] ? params["binfc"] : "#fff",
+            defaultValue: "#fff",
+            onChange: function (x, y, z) {
+                manipulate_url("binfc", y.value);
+            },
+        },
+        {
+            cssVar: ["font-opacity-bin", "%"],
+            label: "Font Opacity",
+            type: "range",
+            min: 0,
+            max: 100,
+            defaultValue: "10",
+            value: params["binfo"] ? params["binfo"] : "10",
+            defaultValue: "#fff",
+            onChange: function (x, y, z) {
+                manipulate_url("binfo", y.value);
+            },
+        },
         "Countdown Settings",
         {
             label: "Enable Countdown",
