@@ -1,0 +1,81 @@
+/* -------------------------------------------------------------------------- */
+/*                               General styling                              */
+/* -------------------------------------------------------------------------- */
+
+html, body, #binary, #decimal {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    user-select: none;
+    user-zoom: none;
+}
+
+body {
+    background: linear-gradient(var(--rotation), var(--color1), var(--color2)) no-repeat;
+    /* background: linear-gradient(30deg, rgb(63, 255, 223), rgb(255, 0, 179)) no-repeat; */
+}
+
+#binary, #decimal {
+    position: absolute;
+}
+
+* {
+    transition: 0.17s;
+}
+
+.transparent {
+    opacity: 0%;
+}
+
+.knobsIframe {
+    all: unset;
+}
+    
+/* -------------------------------------------------------------------------- */
+/*                                   Binary                                   */
+/* -------------------------------------------------------------------------- */
+
+#binary {
+    font-family: "Martian Mono";
+    color: white;
+    opacity: 10%;
+    font-size: 35vh;
+}
+
+#bin-hours {
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+}
+
+#bin-minutes {
+    position: absolute;
+    bottom: 7vh;
+    right: 7vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Decimal                                  */
+/* -------------------------------------------------------------------------- */
+
+#decimal {
+    display: table;
+}
+
+#dec-wrapper {
+    font-family: "Courier Prime";
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#dec-main {
+    font-size: 45vh;
+}
+
+#dec-seconds {
+    font-size: 13vh;
+}
